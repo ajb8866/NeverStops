@@ -4,7 +4,7 @@ public class SuperStack<T> {
 	private int top;
 	public SuperStack(int size)
 	{
-		items = (T[]) new Object[size];
+		setItems((T[]) new Object[size]);
 	}
 	public boolean isEmpty()
 	{
@@ -19,8 +19,12 @@ public class SuperStack<T> {
 	{
 		return true;
 	}
-	
-	
+	public T[] getItems() {
+		return items;
+	}
+	public int getTop() {
+		return top;
+	}
 	
 
 }
